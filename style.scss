@@ -195,7 +195,7 @@ $section-padding:5rem 2rem 3rem;
     }
 
 }
-.section3{
+.section4{
     padding: $section-padding;
     width: 100%;
     display: flex;
@@ -206,6 +206,7 @@ $section-padding:5rem 2rem 3rem;
         display: flex;
         flex-wrap: wrap;
         gap: 1.5rem;
+        text-align: center;
         .box{
             width: 200px;
             flex-grow: 1;
