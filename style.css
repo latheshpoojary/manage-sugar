@@ -225,6 +225,18 @@
   gap: 1.5rem;
   background-color: rgba(128, 128, 128, 0.1);
 }
+.section4 .discription .desc button {
+  padding: 1rem;
+  border-radius: 30px;
+  background-color: #ffa500;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.section4 .discription .desc button:hover {
+  transform: scale(1.05);
+}
 
 @media (max-width: 800px) {
   .section2 .image {
