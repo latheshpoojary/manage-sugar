@@ -1,402 +1,233 @@
-#mainContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,200;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: min(2vw, 16px);
 }
 
-#bgImage {
-    width: 100%;
-    height: 650px;
-    position: relative;
+.section1 {
+  width: 100%;
+  padding: 5rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-image: url("./image/homeBg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section1 .top {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+  gap: 1rem;
+}
+.section1 .top h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ffa500;
+}
+.section1 .top p {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+.section1 .top button {
+  padding: 1rem;
+  border-radius: 30px;
+  background-color: #ffa500;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.section1 .top button:hover {
+  transform: scale(1.05);
+}
+.section1 .bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.section1 .bottom .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  flex-grow: 1;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.section1 .bottom .box .logo {
+  width: 50px;
+  height: 50px;
+}
+.section1 .bottom .box .logo img {
+  width: 100%;
+  height: 100%;
+}
+.section1 .bottom .box h1 {
+  font-size: 1.7rem;
 }
 
-#homePageContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 10px;
-    background-color: rgb(198 205 202 / 20%);
-    height: 900px;
-    align-items: center;
+.section2 {
+  padding: 5rem 2rem 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.section2 .top {
+  text-align: center;
+}
+.section2 .top h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.section2 .top p {
+  font-size: 1.5rem;
+}
+.section2 .images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.section2 .images .image {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  flex-basis: 350px;
+  flex-grow: 1;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: transform 2s ease-in;
+}
+.section2 .images .image:hover .text {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+  opacity: 1;
+}
+.section2 .images .image img {
+  width: 100%;
+  height: 100%;
 }
 
-#homePageTextContainer {
-    padding-bottom: 350px;
-    width: 95%;
+.section3 {
+  width: 100%;
+  padding: 5rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.section3 .top {
+  text-align: center;
+}
+.section3 .top h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.section3 .top p {
+  font-size: 1.5rem;
+}
+.section3 .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.section3 .boxes .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 100px;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.section3 .boxes .box h1 {
+  font-size: 1.7rem;
+}
+.section3 button {
+  padding: 1rem;
+  border-radius: 30px;
+  background-color: #ffa500;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.section3 button:hover {
+  transform: scale(1.05);
 }
 
-#homePageHeaderText {
-    font-family: 'Francois One', sans-serif;
-    font-size: 65px;
-    margin-top: 0;
-    color: #c09e65;
-    margin-bottom: 20px;
+.section3 {
+  padding: 5rem 2rem 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.section3 .top {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.section3 .top .box {
+  width: 200px;
+  flex-grow: 1;
+}
+.section3 .top .box img {
+  width: 100%;
+  height: 100%;
+}
+.section3 .top .box:nth-child(even) {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 2px solid #ffa500;
+}
+.section3 .top .box:nth-child(even) h1 {
+  font-size: 1.5rem;
+}
+.section3 .discription {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section3 .discription .image {
+  width: 50%;
+}
+.section3 .discription .image img {
+  width: 100%;
+  height: 100%;
+}
+.section3 .discription .desc {
+  width: 50%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1.5rem;
+  background-color: rgba(128, 128, 128, 0.1);
 }
 
-#homePageParaText {
-    line-height: 25px;
-    font-size: 15px;
-    margin-top: 0;
-    color: #aaaaaa;
-    margin-bottom: 25px;
-}
-
-.button {
-    width: 12%;
-    height: 40px;
-    border-radius: 20px;
-    color: #aaaaaa;
-    border: 2px solid #c09e65;
-}
-
-#cardsRowContainer {
-    width: 95%;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 60px;
-}
-
-.cards {
-    background-color: white;
-    width: 30%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    width: 15%;
-}
-
-.cardHeaderText {
-    font-weight: bold;
-    margin-bottom: 0px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
-.paraText {
-    color: #aaaaaa;
-    font-size: 12px;
-    font-family: 'Noto Sans', sans-serif;
-    line-height: 20px;
-}
-
-#imageContainer {
-    background-image: url(homeBg.jpeg);
-    background-size: 100% 100%;
-    background-position: center;
-    height: 900px;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
-#cardContainer {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    height: 300px;
-    width: 99%;
-    top: 820px;
-    background-color: rgb(198 205 202 / 20%);
-}
-
-#sugarRecipesContainer {
-    height: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-}
-
-#recipeHeaderText {
-    font-family: 'Sintony', sans-serif;
-    margin-bottom: 0px;
-}
-
-#recipeParaText {
-    text-align: center;
-    margin-bottom: 40px;
-    line-height: 25px;
-    font-size: 15px;
-    font-family: 'Sintony', sans-serif;
-}
-
-#recipeImageContainer {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    padding-bottom: 70px;
-}
-    
-.recipeRowContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-bottom: 7px;
-}
-
-.recipeimg {
-    width: 33%;
-    height: 300px;
-}
-
-#ideasContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #f1f1f1;
-    align-items: center;
-    padding-top: 60px;
-}
-
-#ideasHeader {
-font-family: 'Sintony', sans-serif;
-margin-bottom: 10px;
-}
-
-#ideasPara {
-    text-align: center;
-    line-height: 22px;
-    font-family: 'Sintony', sans-serif;
-    font-size: 13px;
-    margin-bottom: 50px;
-}
-
-#ideaTextContainer {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    justify-content: space-between;
-}
-
-.ideaHeaderText {
-    font-family: 'Roboto', sans-serif;
-}
-
-.ideaParaText {
-    font-size: 14px;
-    color: #aaaaaa;
-}
-
-#ideaButtonContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 65px;
-    padding-bottom: 45px;
-}
-
-#snackDietContainer {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    height: 450px;
-    align-items: center;
-}
-
-div#snackRowDietContainer {
-    display: flex;
-    width: 95%;
-    height: 250px;
-    justify-content: space-between;
-    padding-top: 60px;
-}
-
-img.snacksDietImage {
-    width: 25%;
-}
-
-.snackDietTextContainer {
-    border: 2px solid #bfb6a5;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-h3.snackDietHeaderText {
-    display: flex;
-    justify-content: center;
-    width: 92%;
-    font-family: 'Roboto', sans-serif;
-}
-
-p.snackDietParaText {
-    display: flex;
-    justify-content: center;
-    line-height: 20px;
-}
-
-div#healthContainer {
-    display: flex;
-    flex-direction: row;
-}
-
-#healthImage {
-    width: 50%;
-}
-
-div#healthTextContainer {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-}
-
-h3#healthHeaderText {
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-}
-
-div#wrapperHeathText {
-    width: 86%;
-    display: flex;
-    flex-direction: column;
-}
-
-p.healthParaText {
-    line-height: 24px;
-font-family: 'Sintony', sans-serif;
-font-size: 16px;
-}
-
-#readMoreButton {
-    width: 18%;
-    height: 40px;
-    border-radius: 20px;
-    color: #aaaaaa;
-    border: 2px solid #c09e65;
-    background-color: rgb(235 237 236 / 20%);
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    p.healthParaText {
-font-size: 14px;
-}
-div#healthContainer {
-height: 550px;
-}
-h3#healthHeaderText{
-        margin: 0;
-    }     
-    #readMoreButton{
-         width: 28%;
-    }       
-}
-@media screen and (max-width: 768px) {
-#homePageParaText{
-        width: 33%;
-    }
-    button.button {
-width: 15%;
-}
-    #cardsRowContainer{
-        width: 94%;
-    }
-    .cards{
-        width: 32%;
-    }
-    .cardHeaderText{
-        font-size: 16px;
-    }
-    .paraText{
-        font-size: 10px;
-    }
-    .logo {
-        width: 14%;
-    }
-    #recipeHeaderText{
-        font-size: 28px;
-    }
-    #recipeParaText{
-        font-size: 12px;
-        line-height: 22px;
-    }
-    #sugarRecipesContainer{
-        height: 900px;
-    }
-    .recipeimg {
-        width: 229px;
-        height: 188px;
-    }
-    #recipeImageContainer{
-        padding-bottom: 40px;
-    }
-    #ideasHeader {
-        font-size: 20px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    #ideasPara {
-        font-size: 12px;
-        line-height: 22px;
-        margin-bottom: 40px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .ideaHeaderText{
-        font-size: 16px;
-    }
-    #ideaTextContainer {
-        width: 92%;
-    }
-    #ideasContainer {
-        padding-top: 40px;
-    }
-    #ideaButtonContainer {
-        padding-top: 40px;
-        padding-bottom: 30px;
-    }
-    #snackDietContainer {
-        height: 320px;
-    }
-    h3.snackDietHeaderText {
-       font-size: 16px;
-       margin: 0;
-    }
-    p.snackDietParaText {
-       font-size: 13px;
-    }
-    div#snackRowDietContainer {
-        height: 200px;
-        margin-bottom: 40px;
-    }
-    img.snacksDietImage {
-        width: 25%;
-    }
-    .snackDietTextContainer {
-        width: 23%;
-    }
-    div#wrapperHeathText {
-    width: 80%;
-    }
-    #readMoreButton{
-         width: 28%;
-    }
-    h3#healthHeaderText{
-        font-size: 20px;
-        margin: 0;
-    }
-    p.healthParaText{
-        font-size: 10px;
-        line-height: 22px;
-    }
-    div#healthContainer {
-        height: 400px;
-    }
-    #readMoreButton {
-        width: 32% !important;
-    }
-        }
+@media (max-width: 800px) {
+  .section2 .image {
+    height: 150px !important;
+    flex-basis: 150px !important;
+  }
+}/*# sourceMappingURL=style.css.map */

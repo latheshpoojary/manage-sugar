@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,200;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    font-size: min(2vw,16px);
+}
+$primary-color:#ffe4b3;
+$secondary-color:#ffa500;
+$paragraph-size:1.5rem;
+$h1-size:3rem;
+$section-padding:5rem 2rem 3rem;
+.section1{
+    width: 100%;
+    padding: $section-padding;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-image: url('./image/homeBg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-size: cover;
+    .top{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 5rem;
+        gap: 1rem;
+        h1{
+            font-size: $h1-size;
+            font-weight: 900;
+            color: $secondary-color;
+        }
+        p{
+            font-size: $paragraph-size;
+            line-height: 2;
+        }
+        button{
+            padding: 1rem;
+            border-radius: 30px;
+            background-color: $secondary-color;
+            border: none;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            font-weight: 500;
+            font-size: 1.1rem;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        .box{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding:3rem 2rem;
+            text-align: center;
+            flex-grow: 1;
+            background-color: #ffffff;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+            .logo{
+                width: 50px;
+                height: 50px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h1{
+                font-size: 1.7rem;
+            }
+
+        }
+    }
+}
+.section2{
+    padding: $section-padding;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .top{
+        text-align: center;
+        h1{
+            font-size: $h1-size;
+            font-weight: 800;
+            text-transform: capitalize;
+        }
+        p{
+            font-size: $paragraph-size;
+        }
+    }
+    .images{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        .image{
+            position: relative;
+            width: 350px;
+            height: 350px;
+            flex-basis: 350px;
+            flex-grow: 1;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            transition:transform 2s ease-in;
+            &:hover .text{
+                display: block;
+                opacity: 1;
+                transform: scale(1);
+                opacity: 1;
+                
+            }
+            img{
+                width: 100%;
+                height: 100%;
+               
+            }
+            // .text
+            // {
+            //     width: 100%;
+            //     position: absolute;
+            //     bottom: 0;
+            //     height: 25%;
+            //     text-align: center;
+            //     transform: translateY(10px);
+            //     background: linear-gradient(to bottom,rgb(225, 241, 241),rgb(108, 225, 225));
+            //     opacity: 0;
+            //     white-space: nowrap;
+            //     overflow: hidden;
+            //     text-overflow: ellipsis;
+            //     max-width: 500ch;
+            // }
+        }
+    }
+}
+.section3{
+    width: 100%;
+    padding: $section-padding;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .top{
+        text-align: center;
+        h1{
+            font-size: $h1-size;
+            font-weight: 800;
+            text-transform: capitalize;
+        }
+        p{
+            font-size: $paragraph-size;
+        }
+    }
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        .box{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding:3rem 2rem;
+            text-align: center;
+            flex-grow: 1;
+            flex-basis: 100px;
+            background-color: #ffffff;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            h1{
+                font-size: 1.7rem;
+            }
+
+        }
+    }
+    button{
+        padding: 1rem;
+        border-radius: 30px;
+        background-color: $secondary-color;
+        border: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        font-weight: 500;
+        font-size: 1.1rem;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+}
+.section3{
+    padding: $section-padding;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .top{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        .box{
+            width: 200px;
+            flex-grow: 1;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            &:nth-child(even){
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                border: 2px solid $secondary-color;
+                h1{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .discription
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .image{
+            width: 50%;
+            
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .desc{
+            width: 50%;
+            padding:3rem 2rem;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 1.5rem;
+            background-color: rgba($color: grey, $alpha: 0.1);
+        }
+    }
+}
+@media (max-width:800px){
+    .section2{
+        .image{
+            height: 150px !important;
+          flex-basis: 150px !important;
+        }
+    }
+   
+}
